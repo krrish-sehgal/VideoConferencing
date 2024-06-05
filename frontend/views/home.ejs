@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Call</title>
+  </head>
+  <body>
+    <div id="meetingRoom">
+      <div id="roomSelection">
+        <input type="text" id="roomName" placeholder="Room Name" />
+      </div>
+
+      <input type="text" id="userName" placeholder="User Name" />
+
+      <button id="startButton">Start Call</button>
+
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay muted></video>
+    </div>
+    <!-- Include Socket.IO client library from the backend server -->
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <!-- Include your custom JavaScript file -->
+    <script src="/js/main.js"></script>
+  </body>
+</html>
